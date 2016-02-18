@@ -31,5 +31,25 @@ class  ScrabbleGeneratorTest  extends PHPUnit_Framework_TestCase{
         $result = $test_ScrabbleGenerator->getScore($input);
         $this->assertEquals(10, $result);
     }
+
+    function test_ScrabbleGenerator_caseInsensitive()
+    {
+        //Arrange
+        $test_ScrabbleGenerator = new ScrabbleGenerator;
+        //Act
+        $input = "k";
+        //Assert
+        $result = $test_ScrabbleGenerator->getScore($input);
+        $this->assertEquals(5, $result);
+    }
+    function test_ScrabbleGenerator_Word()
+    {
+        $test_ScrabbleGenerator = new ScrabbleGenerator;
+
+        $input = "Mulder";
+
+        $result = $test_ScrabbleGenerator->getScore($input);
+        $this->assertEquals(9, $result);
+    }
 }
  ?>
