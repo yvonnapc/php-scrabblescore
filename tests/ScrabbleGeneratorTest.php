@@ -51,5 +51,15 @@ class  ScrabbleGeneratorTest  extends PHPUnit_Framework_TestCase{
         $result = $test_ScrabbleGenerator->getScore($input);
         $this->assertEquals(9, $result);
     }
+
+    function test_ScrabbleGenerator_NotaWord()
+    {
+        $test_ScrabbleGenerator = new ScrabbleGenerator;
+
+        $input = "123'";
+
+        $result = $test_ScrabbleGenerator->getScore($input);
+        $this->assertEquals("Please No Spaces or Punctuation", $result);
+    }
 }
  ?>

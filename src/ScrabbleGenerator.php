@@ -34,7 +34,7 @@ class ScrabbleGenerator {
             } elseif ($letter == 'Q' || $letter == 'Z'){
                 $this->setValue($this->value + 10);
             } else {
-                $this->setValue("Please No Spaces or Punctuation");
+                return ("Please No Spaces or Punctuation");
             }
         }
         return $this->getValue();
