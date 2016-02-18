@@ -26,10 +26,10 @@ class  ScrabbleGeneratorTest  extends PHPUnit_Framework_TestCase{
     {
         $test_ScrabbleGenerator = new ScrabbleGenerator;
 
-        $input = "Q";
+        $input = "j";
 
         $result = $test_ScrabbleGenerator->getScore($input);
-        $this->assertEquals(10, $result);
+        $this->assertEquals(8, $result);
     }
 
     function test_ScrabbleGenerator_caseInsensitive()
