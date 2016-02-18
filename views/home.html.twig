@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Scrabble</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Play Scrabble!</h1>
+            <h4>Rules</h4><br>
+            <ol>
+                <li>No Contractions</li>
+                <li>No Spaces</li>
+                <li>One Word Plays</li>
+                <li>No Punctuation; Only Letters</li>
+            </ol>
+
+
+            <form action="/play" method="get">
+                <label for="scrabble">Input One Word</label>
+                <input id="scrabble" name="scrabble" type="text">
+            <button type="submit" class="btn-success">PLAY</button>
+            </form>
+
+            <h3>Your Score Is:</h3>
+            <p> {{ scrabblePlay }}</p>
+            
+        </div>
+    </body>
+</html>
