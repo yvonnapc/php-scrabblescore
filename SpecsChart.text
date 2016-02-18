@@ -1,0 +1,20 @@
+Behavior:
+    A single letter worth one point
+Input:
+    'A'
+Output Example:
+    '1'
+
+Behavior:
+    A single letter worth five points
+Input:
+    'K'
+Output Example:
+    '5'
+
+Behavior:
+    A word with multiple letters of different point values
+Input:
+    'Cod'
+Output Example:
+    '6'
