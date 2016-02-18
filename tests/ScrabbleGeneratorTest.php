@@ -21,7 +21,15 @@ class  ScrabbleGeneratorTest  extends PHPUnit_Framework_TestCase{
 
         $result = $test_ScrabbleGenerator->getScore($input);
         $this->assertEquals(1, $result);
+    }
+    function test_ScrabbleGenerator_multipointLetter()
+    {
+        $test_ScrabbleGenerator = new ScrabbleGenerator;
 
+        $input = "Q";
+
+        $result = $test_ScrabbleGenerator->getScore($input);
+        $this->assertEquals(10, $result);
     }
 }
  ?>
