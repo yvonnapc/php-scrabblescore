@@ -1,20 +1,25 @@
 # _Scrabble Score_
 
-#### An interactive webpage to play Scrabble  | February 18, 2016
+#### An interactive webpage that calculates scrabble scores  | February 18, 2016
 
 #### By: Yvonna Contreras & Nic Netzel
 
 ## Description
 
-This application allows the user to input a word which will then be analyzed and given a score based on the different values of each letter. 
+This application allows the user to input a word which will then be analyzed and given a score based on the different values of each letter.
+
+## Prerequisites
+
+You will need the following things properly installed on your computer:
+
+• [MAMP](https://www.mamp.info/en/downloads/)
 
 ## Setup/Installation Requirements
 
-1. Clone this repository: https://github.com/yvonnapc/php-unit-bdd-scrabblescore
-2. Open Terminal:<br>
-     -Within the project directory run ```$ Composer Install ```<br>
-     -Within the "Web" folder start PHP Server ```$ php -S localhost:8000```<br>
-3. Navigate to ```localhost:8000``` in your browser<br>
+1. Open Terminal and clone into this repository: https://github.com/yvonnapc/php-scrabblescore.git<br>
+2. Within the project directory run ```$ composer install``` <br>
+3. Start MAMP<br>
+4. Navigate your browser to ```localhost:8889```<br>
 
 ## Known Bugs
 
@@ -26,13 +31,13 @@ If you have any issues, questions, ideas, or concerns contact me at yvonnap.cont
 
 ## Technologies Used
 
-* Bootstrap
-* PHP
-* GIT
-* Twig
-* Silex
-* Composer
+• Bootstrap<br>
+• PHP<br>
+• GIT<br>
+• Twig<br>
+• Silex<br>
+• Composer<br>
 
 ### License
 
-Copyright (c) 2016  |  Yvonna Contreras  |   Nic Netzel  |  Epicodus  |  Portland, OR
+Copyright (c) 2016  |  Yvonna Contreras &  Nic Netzel  |  Epicodus  |  Portland, OR
